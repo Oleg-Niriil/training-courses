@@ -1,0 +1,353 @@
+@import "nullstyle.scss";
+body {
+    // background: url("../img/bg.jpg") 50% 50%/cover no-repeat fixed;
+    font-family: Calibri;
+    font-size: 18px;
+    overflow: hidden;
+    background-color: #003567;
+}
+  .glow-button {
+    display: inline-block;
+    // display: none; // убрать
+    position: absolute;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 5px;
+    margin: 90px 0px 3px 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #ffdb779a inset, 0 0 0 0 #ffdb779a;
+    font-family: Calibri;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    transition: 0.15s ease-in-out;
+    border: 2px solid black;
+    &:active {
+      background-color: #444444;
+    }
+  }
+  .glow-button:hover {
+    box-shadow: 0 0 10px 0 #ffdb779a inset, 0 0 10px 4px #ffdb779a;
+    text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+    color: #ffdb77fb;
+    border: 2px solid #ffdb77;
+  }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 96%;
+  height: 100vh;  
+  margin: 0px auto;
+  background-color: #003567;
+  border-bottom: 2px solid rgb(36, 36, 36);
+  border-radius: 50px;
+}
+* {transition: 0.5s;}
+.logo {
+  width: 100px;
+  height: 50px;
+  box-shadow: 0px 5px 3px black;
+  background: url("../img/logo.png") 0 0/100px 50px no-repeat;
+  border-radius: 15px;
+  &:hover {background: linear-gradient(0deg, rgba(0, 72, 255, 0.322) 0%, rgba(2, 0, 36, 0) 100%), url("../img/logo.png") 0 0/100px 50px no-repeat;}
+  &:active {
+    position: relative;
+    top: 4px;
+    box-shadow: 0px 0px 7px black inset;
+    transition: 0s;
+    background: linear-gradient(0deg, rgba(0, 21, 73, 0.336) 0%, rgba(2, 0, 36, 0) 100%), url("../img/logo.png") 0 0/100px 50px no-repeat;
+  }
+}
+.navigation {
+  width: 25%;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  &__link {
+    font-family: Calibri;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    background-color: #003567;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0);
+    &:hover {color: #003567; background: linear-gradient(0deg, rgba(0, 72, 255, 0.651) 0%, rgba(2, 0, 36, 0) 100%);}
+    &:active {
+      position: relative;
+      top: 2px;
+      color: #003567; background: linear-gradient(0deg, rgba(0, 40, 139, 0.651) 0%, rgba(2, 0, 36, 0) 100%);
+      box-shadow: 0px 0px 5px black inset;
+    }
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: white;
+      &:hover {color: #003567;}
+    }
+  }
+}
+.header, .main, .footer {
+  background-color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+  width: 100%;
+  height: 10vh; 
+  border-radius: 45px;
+  border: 3px solid #003567;
+  &__text {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-family: Calibri;
+    font-weight: 700;
+    padding-top: 12px;
+    font-weight: 400;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    background-color: #003567;
+    animation: homework 7s linear infinite normal running 0s none;
+    &:hover {animation-play-state:paused; color: #003567; background: linear-gradient(0deg, rgba(0, 72, 255, 0.651) 0%, rgba(2, 0, 36, 0) 100%);}
+  }
+}
+@keyframes homework {
+  0% {
+    left: 0%;
+  }
+  25% {
+    left: -20%;
+  }
+  50% {
+    left: 0%;
+  }
+  75% {
+    left: 20%;
+  }
+  100% {
+    left: 0;
+  }
+  }
+.main {
+  width: 100%;
+  height: 70vh;
+  border: 3px solid #003567;
+  border-radius: 45px;
+}
+.section-services {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4%; 
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 90%;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #003567;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  }
+  &__text {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    &:hover {transform: scale(1.3); color: #ffffff; font-weight: 700; background: linear-gradient(0deg, rgba(0, 72, 255, 0.651) 0%, rgba(2, 0, 36, 0) 100%);}
+    & span {
+      display: flex;
+      margin-left: 25%;
+      color: red;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    background: url("../img/card-bg.jpg") 0 -60px/383px no-repeat;
+  }
+}
+
+.section-products {
+  width: 100%;
+  height: 52%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4%;
+  &__left-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0px 145px 0px 0px;
+    }
+  &__right-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0px 0px 0px 145px;
+  }
+  &__image {
+    width: 40%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    background: url("../img/card-img.jpg") -190px -30px/550px no-repeat;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #003567;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  }
+  &__card-img {
+    width: 47%;
+    height: 100%;
+    background: url("../img/card-img-2.jpg") 0 0/450px no-repeat;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 47%;
+    height: 100%;
+    background-color: #003567;
+    border-radius: 30px;
+  }
+  &__title {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    &:hover {color: #ffffff; font-weight: 700; background: linear-gradient(0deg, rgba(0, 72, 255, 0.651) 0%, rgba(2, 0, 36, 0.692) 100%);}
+  }
+  &__desc-text {
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    padding: 35px 10px 10px 10px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 700;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    transition: 2s;
+    &:hover { 
+      position: relative;
+      animation: text-anim 1s linear normal running 0s both;
+      border-radius: 20px; 
+      transition: 1s; 
+      width: 125%; 
+      position: relative; 
+      // top: -20%; 
+      // left: -56.5%; 
+      transform: scale(1.7); 
+      color: #ffffff; 
+      font-weight: 700; 
+      background: linear-gradient(0deg, rgba(0, 72, 255, 0.651) 0%, rgba(2, 0, 36, 0.719) 100%);
+    }
+  }
+}
+
+@keyframes text-anim {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: -20%;
+    left: -56.5%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  padding: 20px 25px;
+  border: 3px solid #003567;
+  border-radius: 45px;
+  &__copyrights {
+    position: relative;
+    left: -2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+  }
+  &__strange-copirights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 42%;
+    height: 100%;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 70%;
+    height: 30%;
+    font-weight: 700;
+    background-color: #003567;
+    border-radius: 30px;
+    &:hover {border:1px solid #003567; color: #003567; font-weight: 700; background: linear-gradient(0deg, rgba(0, 72, 255, 0.651) 0%, rgba(2, 0, 36, 0) 100%);}
+  }
+}
