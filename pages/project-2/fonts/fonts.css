@@ -1,0 +1,18 @@
+@font-face {
+   font-family: 'font-1';
+   src: url("../fonts/bigjohn/BIG\ JOHN.otf");
+   font-weight: 400;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: 'font-2';
+   src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+   font-weight: 400;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: 'font-3';
+   src: url("../fonts/SourceSans3-VariableFont_wght.ttf");
+   font-weight: 400;
+   font-style: normal;
+ }

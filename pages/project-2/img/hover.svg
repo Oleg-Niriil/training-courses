@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.5" height="3" viewBox="0 0 39.5 3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #19bd9a;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="HOVER" class="cls-1" d="M411,3820h38" transform="translate(-410.25 -3819.25)"/>
+</svg>
