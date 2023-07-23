@@ -1,0 +1,73 @@
+@import "nullstyle.scss";
+body {
+  padding:0;
+  margin:0;
+  overflow: hidden;
+  background: url("../img/bg.jpg") 50% 50%/cover no-repeat fixed;
+}
+
+.glow-button {
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #ffdb779a inset, 0 0 0 0 #ffdb779a;
+  font-family: Calibri;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  transition: .15s ease-in-out;
+  border: 2px solid black;
+  &:active {
+    background-color: #444444;
+  }
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 10px 0 #ffdb779a inset, 0 0 10px 4px #ffdb779a;
+  text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+  color: #ffdb77fb;
+  border: 2px solid #ffdb77;
+}
+
+.header {
+  &__container {
+    flex-shrink: 1;
+    display: block;
+    text-align: center;
+    width: 430px;
+    padding: 10px 0px 10px 0px;
+    margin: 3% 5% 0% 3%;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffdb778a;
+    transition: 2s;
+    &:hover {
+      box-shadow: 0 0 10px 0 #ffdb779a inset, 0 0 10px 4px #ffdb779a;
+      text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+      color: #ffdb77;
+      border: 2px solid #ffdb779a;
+      background-color: #47474765;
+      text-shadow: 120px 5px 5px #ffdb77, -120px -5px 5px #ffdb77, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+      transition: 2s;
+    }
+  }
+  &__text {
+    font-family: Calibri;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.container {
+  display: block;
+  width: 430px;
+  padding: 20px 0px 10px 20px;
+  margin: 1% 5% 3% 3%;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffdb771c;
+}
