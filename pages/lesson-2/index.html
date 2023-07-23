@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <title>Lesson 2</title>
+</head>
+<body>
+    <a class="glow-button" href="../../index-main.html">В меню</a>
+    <div class="conteiner">
+        <header class="header">
+            <h class="header-h1">Домашнее задание 2</h>
+        </header>
+        <main class="main">
+            <form class="login" action="#" accept-charset="UTF-8" autocomplete="off" method="post">
+                <div class="login__div"><input tabindex="1" class="login__input" name="login" type="text" placeholder="Введите Логин" value="" maxlength="24" minlength="8"></div>
+                <div class="login__div"><input tabindex="2" class="login__input" name="name" type="text" placeholder="Введите Имя" value="" maxlength="24" minlength="8"></div>
+                <div class="login__div"><input tabindex="3" class="login__input" name="surname" type="text" placeholder="Введите Фамилию" value="" maxlength="24" minlength="8"></div><br>
+                <div class="login__div"><input tabindex="4" class="login__input" name="e-mail" type="email" placeholder="Введите E-mail" value=""></div>
+                <div class="login__div"><input tabindex="5" class="login__input" name="password" type="password" placeholder="Придумайте Пароль" value="" maxlength="24" minlength="8"></div><br>
+                <div class="login__div"><label for="phone"><span class="main__text">Укажите Ваш Номер:</span></label></div>
+                <input tabindex="6" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+                <div class="login__div"><input tabindex="7" name="avatar" type="file" accept="image/*"></div><p class="login__avatar">Загрузите Ваш Аватар</p><br>
+                <div class="login__div"><input tabindex="8" type="checkbox" name="agreement" value="1"><span class="main__text agreement">Согласие на обработку персональных данных</span></div><br>
+                <div class="login__div"><button tabindex="9" class="login__btn register" name="registeration" type="submit">Зарегистрироваться</button></div>
+                <div class="login__div"><button tabindex="10" class="login__btn clear" name="clear" type="reset">Очистить Поле Ввода</button></div>
+                <div class="login__div"><button tabindex="11" class="login__btn complaint" name="complaint" type="submit">Пожаловаться</button></div>
+                <div class="login__div"><input tabindex="12" class="login__image" type="image" src="img/login-icon.png"></div>
+            </form>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'font-1';
+  src: url('Ysabeau_SC/static/YsabeauSC-ExtraBold.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-2';
+  src: url('Caprasimo-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-3';
+  src: url('Kablammo/Kablammo-Regular-VariableFont_MORF.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-4';
+  src: url('Dancing_Script/DancingScript-VariableFont_wght.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-5';
+  src: url('Pacifico/Pacifico-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-6';
+  src: url('Amatic_SC/AmaticSC-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-7';
+  src: url('Gruppo/Gruppo-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-8';
+  src: url('PressStart2P-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-9';
+  src: url('Foldit/Foldit-VariableFont_wght.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-10';
+  src: url('LuckiestGuy-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-11';
+  src: url('Monoton-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-12';
+  src: url('RubikIso-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
