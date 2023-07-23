@@ -62,12 +62,20 @@ body {
 }
 
 .container {
-  display: block;
-  width: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 430px;
   padding: 20px 0px 10px 20px;
   margin: 1% 5% 3% 3%;
   border: 2px solid black;
   border-radius: 10px;
   overflow: hidden;
   background: #ffdb771c;
+}
+
+.projects {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding-right: 4.9%;
 }
